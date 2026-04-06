@@ -1,0 +1,52 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg);
+    width: 100%;
+    padding: 0dvw 2dvw;
+    height: 8dvh;
+    position: fixed;
+    top: 0;
+    .left-side{
+        color: var(--accent);
+        .name{
+            &:hover{
+                transition: var(--transition);
+                text-shadow: 0px 0px 6px var(--text);
+            }
+        }
+    }
+    .right-side{
+        display: flex;
+        gap: var(--space-sm);
+        color: var(--muted);
+        .about,.projects,.contact{
+            transition: var(--transition); 
+            position: relative;
+            padding: 4px 8px;
+
+            &:hover {
+                color: var(--text);
+                cursor: pointer;
+                text-shadow: 0 0 8px var(--accent-dim), 0 0 12px rgba(181, 123, 255, 0.3);
+                
+                &::after {
+                    width: 80%;
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 10%;
+                width: 0;
+                height: 2px;
+                background: var(--accent);
+                box-shadow: 0 0 10px var(--accent);
+                transition: var(--transition);
+            }
+        }
+
+    }
+}
