@@ -72,8 +72,8 @@ function About() {
 
 
         <div className='buttons-container'>
-          <button className='btn btn-primary'>CV <br /> herunterladen</button>
-          <button className='btn btn-secondary'>Projekte <br /> ansehen</button>
+          <button className='btn-d btn btn-primary'>CV  herunterladen</button>
+          <button className='btn btn-secondary'>Projekte  ansehen</button>
         </div>
 
       </div>

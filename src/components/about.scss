@@ -24,11 +24,12 @@
             content: '';
             position: absolute;
             bottom: 0%;
-            right: -10%;
-            width: 50%;
-            height: 50%;
-            background: radial-gradient(circle, rgba(168, 85, 247, 0.1) 0%, rgba(168, 85, 247, 0) 80%);
-            filter: blur(100px);
+            right: 0%;
+            width: 40%;
+            height: 40%;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, rgba(168, 85, 247, 0) 80%);
+            filter: blur(80px);
+            overflow: hidden;
             z-index: 0;
             pointer-events: none;
         }
@@ -139,6 +140,14 @@
                         font-size: 0.85rem;
                     }
                 }
+            }
+        }
+
+        .buttons-container{
+            display: flex;
+            gap: 2rem;
+            .btn-d{
+                width: 20%;
             }
         }
     }
