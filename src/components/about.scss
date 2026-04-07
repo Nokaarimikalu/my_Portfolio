@@ -19,7 +19,6 @@
             pointer-events: none; 
         }
 
-        // Der Glow unten rechts
         &::after {
             content: '';
             position: absolute;
@@ -79,6 +78,11 @@
                 border: solid 2px var(--muted);
                 border-radius: 50px;
                 background-color: var(--surface-2);
+
+                &:hover{
+                    transition: var(--transition);
+                    border: solid 2px var(--accent);
+                }
             }
         }
 
@@ -110,7 +114,7 @@
                     min-width: 80px; 
 
                     .dot {
-                        color: #a855f7;
+                        color: var(--accent);
                         font-size: 1.5rem;
                         line-height: 1;
                         text-shadow: var(--accent)
@@ -153,7 +157,121 @@
     }
 
     .right-side{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 50%;
+
+        .taken-or-not{
+            display: flex;
+            padding: 2rem 2rem;
+            margin-bottom: 5rem;
+            gap: 1rem;
+            border-radius: var(--radius-lg);
+            border: solid 2px var(--muted);
+            background-color: var(--surface-2);
+            
+            &:hover{
+               border: solid 2px var(--accent); 
+            }
+
+            p{
+                color: var(--text);
+            }
+
+            .dot-animation {
+                display: inline-block;
+                margin-right: 0.5rem;
+                animation: pulse-dot 2s infinite ease-in-out;
+                text-shadow: 0 0 8px var(--accent); 
+            }
+        }
+
+        .right-side-kacheln{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 70%;
+            gap: 1rem;
+
+            .container-kacheln{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                justify-content: space-between;           
+                background-color: var(--surface-2);
+                border-radius: var(--radius-lg);
+                border: solid 2px var(--muted);
+                padding: 2rem;
+                width: 40%;
+                height: 12rem;
+
+                &:hover{
+                    border: solid 2px var(--accent);
+                }
+
+                p{
+                    color: var(--accent);
+                }
+            }
+
+            .container-long-kachel{
+                width: 84%;
+                background-color: var(--surface-2);
+                border-radius: var(--radius-lg);
+                border: solid 2px var(--muted);
+                padding: 2rem;
+                margin-bottom: 5rem;
+
+                &:hover{
+                    border: solid 2px var(--accent);
+                }
+            }
+        }
+
+        .tech-stack{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            width: 60%;
+            border: solid 2px var(--muted);
+            border-radius: var(--radius-lg);
+            background-color: var(--surface-2);
+
+            &:hover{
+                border: solid 2px var(--accent);
+            }
+            
+            h4{
+                padding-bottom: 1rem;
+            }
+
+            .status-badges{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.4rem;
+
+            .badge{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1.5rem 1rem;
+                min-width: 6rem;
+                height: 3rem;
+                border: solid 2px var(--muted);
+                border-radius: 50px;
+                background-color: var(--surface-2);
+
+                &:hover{
+                    transition: var(--transition);
+                    border: solid 2px var(--accent);
+                }
+            }
+        }
+        }
     }
 }
 

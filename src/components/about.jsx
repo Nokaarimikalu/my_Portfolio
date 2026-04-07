@@ -4,7 +4,7 @@ function About() {
   return <section id="about">
     <div className="content">
       <div className='left-side'>
-        <p className='about-me'><span className='dot-animation'>•</span> ÜBER MICH</p>
+        <p className='about-me prevent-select'><span className='dot-animation'>•</span> ÜBER MICH</p>
         <h2 className='text-one'>
           Ich baue <br />
           Interfaces, <br />
@@ -23,7 +23,7 @@ function About() {
         </p>
 
 
-        <div className='status-badges'>
+        <div className='status-badges prevent-select'>
           <span className='badge'>📍 Schwabhausen (TH)</span>
           <span className='badge'>🌍 Offen für Remote</span>
           <span className='badge'>🚀 Verfügbar ab sofor</span>
@@ -77,7 +77,68 @@ function About() {
         </div>
 
       </div>
-      <div className='right-side'></div>
+      <div className='right-side'>
+
+        <div className='taken-or-not prevent-select'>
+          <div className='dot-animation'>•</div>
+          <p>Aktuell verfügbar für neue Projekte & Stellen</p>
+        </div>
+
+
+        <div className='right-side-kacheln prevent-select'>
+          <div className='container-kacheln'>
+            <h2>1+</h2>
+            <p>Jahre Erfahrung</p>
+          </div>
+          <div className='container-kacheln'>
+            <h2>10+</h2>
+            <p>Abgeschlossene Projekte</p>
+          </div>
+          <div className='container-kacheln'>
+            <h2>8</h2>
+            <p>Tech im Stack</p>
+          </div>
+          <div className='container-kacheln'>
+            <h2>∞</h2>
+            <p>Self-Learning</p>
+          </div>
+          <div className='container-long-kachel'>
+            <div className='left-side-long-kachel'>
+              <h3>100%</h3>
+              <p>Projekte termingerecht</p>
+            </div>
+            <div className='right-side-long-kachel'>
+              {/* <img src="" alt="" /> */}
+            </div>
+          </div>
+        </div>
+
+
+        <div className='tech-stack prevent-select'>
+          <h4>Tech-Stack</h4>
+          <div className='status-badges'>
+            <div className='badge'>HTML</div>
+            <div className='badge'>CSS</div>
+            <div className='badge'>JavaScript</div>
+            <div className='badge'>TypeScript</div>
+            <div className='badge'>Angular</div>
+            <div className='badge'>React</div>
+            <div className='badge'>Git</div>
+            <div className='badge'>Python</div>
+            <div className='badge'>SQLite3</div>
+          </div>
+        </div>
+
+
+        {/* <div className='if-im-not-coding prevent-select'>
+          <p>WENN ICH NICHT CODE...</p> 
+          <p>🎮 Gaming</p>
+          <p>🎵 Musik</p>
+          <p>📚 Weiterlernen</p>
+        </div> */}
+
+
+      </div>
     </div>
   </section>
 }

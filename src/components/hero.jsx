@@ -11,7 +11,7 @@ function Hero() {
           <h1>Hi, ich bin</h1>
           <h1><span className="accent">Pascal Fliedner.</span></h1>
 
-          <h2 className="hero-tagline">Ich baue Lösungen - <br/>   vom User Interface bis zur Datenbank..</h2>
+          <h2 className="hero-tagline">Ich baue Lösungen - <br/>   vom User Interface bis zur Software..</h2>
           <p className="hero-desc">Leidenschaftlicher Entwickler, <br/> der sich im Frontend genauso zu Hause fühlt wie in der Logik von Python. <br/> Ich liebe es, komplexe Systeme zu verstehen und sie in sauberen Code zu übersetzen.</p>
 
           <div className="hero-buttons prevent-select">
