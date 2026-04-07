@@ -1,7 +1,7 @@
 import './navbar.scss'
 
 function Navbar() {
-  return <section id="navbar">
+  return <section id="navbar" className='prevent-select'>
     <div className='left-side'><span className='name'>Pascal-Fliedner.dev</span></div>
     <div className='right-side'>
         <a className='about'>About</a>

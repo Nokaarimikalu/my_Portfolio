@@ -1,7 +1,61 @@
 
 #hero {
     display: flex;
+    justify-content: center;
     align-items: center;
     min-height: 100dvh;
+    width: 100%;
     padding: 8dvh 6dvh 6dvh 6dvh;
+
+    .hero-content{
+        .hero-desc{
+            padding: 2rem 0rem;
+            line-height: 1.5;
+        }
+        .hero-buttons{
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    .hero-avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding-bottom: 8rem;
+        .image-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 305px;
+            width: 305px;
+            background-color: var(--accent);
+            border-radius: 200px;
+            img{
+                height: 300px;
+                width: 300px;
+                border-radius: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+    .scroll-down{
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: var(--muted);
+        animation: fade-out linear;
+        animation-fill-mode: forwards;
+        animation-timeline: scroll();
+        animation-range: 0px 200px;
+    }
+}
+
+@keyframes fade-out {
+
+    100% { 
+        opacity: 0; 
+        visibility: hidden;
+    }
 }

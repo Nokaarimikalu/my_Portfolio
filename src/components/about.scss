@@ -1,0 +1,13 @@
+#about{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    min-height: 100dvh;
+    padding: 8dvh 6dvh 6dvh 6dvh;
+    .left-side{
+        width: 50%;
+    }
+    .right-side{
+        width: 50%;
+    }
+}
